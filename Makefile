@@ -1,3 +1,8 @@
+up:
+	docker-compose up --build -d
+copy-env:
+	cp .env.example .env
+	cp .db.env.example .db.env
 migrate:
 	python3 manage.py migrate
 run:
